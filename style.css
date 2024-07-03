@@ -1,0 +1,34 @@
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7mOxhA6VrttVz22OqTrVDKazysZlDjHJrQ&s') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .search-box {
+    position: relative;
+  }
+  
+  .search-box i.fa-location-dot {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #121213;
+    font-size: 18px;
+  
+  }
+  .search-box input.form-control {
+    padding-left: 30px; 
+    color: black;
+  }
+  div h5,h2{
+    font-size: 20px;
+  }

@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container mt-2">
         <h1 class="text-center text-light mb-3">Weather Updates</h1>
         <div class="row">
             <div class="col-md-4 mb-1"></div>
-            <div class="col-md-4 mb-1">
+            <div class="col-md-4 mb-1" >
                 <div class="search-box d-flex justify-content-center me-3">
                     <i class="fa-solid fa-location-dot"></i>
                     <input type="text" id="locationInput" placeholder="Enter location" class="form-control text-dark">
@@ -32,8 +38,8 @@
             <div class="col-md-4"></div>
         </div>
 
-        <div class="container mt-5">
-            <div class="row">
+        <div class="container mt-4">
+            <div class="row" style="height: 50vh;">
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-12" style="background-color: rgba(8, 8, 8, 0.5);">
@@ -42,9 +48,12 @@
                                 <h2 id="humidity" class="text-center">00%</h2>
                                 <h5 class="t1"><i class="fas fa-wind"></i> Wind:</h5>
                                 <h2 id="windSpeed" class="text-center">0 m/s</h2>
-                                <h4 class="t1 mt-5 mb-5 text-center"><i class="fas fa-location-arrow me-2"></i><span id="locationName">Location:</span></h4>
-                                <h5 class="text-center mt-5 mb-3" id="dateDisplay">Date: <span id="currentDate"></span></h5>
-                                <h5 class="text-center mt-5" id="timeDisplay">Local Time: <span id="currentTime"></span></h5>
+                                <h4 class="t1 mt-5 mb-5 text-center"><i class="fas fa-location-arrow me-2"></i><span
+                                        id="locationName">Location:</span></h4>
+                                <h5 class="text-center mt-5 mb-3" id="dateDisplay">Date: <span id="currentDate"></span>
+                                </h5>
+                                <h5 class="text-center mt-5" id="timeDisplay">Local Time: <span id="currentTime"></span>
+                                </h5>
                                 <h5><i class="fas fa-thermometer-three-quarters"></i> Pressure:</h5>
                                 <h2 id="pressure" class="text-center">000mb</h2>
                             </div>
@@ -57,12 +66,16 @@
                             <div class="text-white p-4 rounded">
                                 <h5><i class="fas fa-thermometer-empty"></i> Temperature:</h5>
                                 <h2 id="temperature" class="text-center">00.0&deg;</h2>
-                                <h4 class="text-center mt-5" style="font-size: 30px; font-weight: 500; color: #faf4f4;" id="weatherDescription">Climate:</h4>
+                                <h4 class="text-center mt-5" style="font-size: 30px; font-weight: 500; color: #faf4f4;"
+                                    id="weatherDescription">Climate:</h4>
                                 <div class="text-center">
-                                    <img id="weatherIcon" src="https://icon-library.com/images/thunderstorm-icon/thunderstorm-icon-19.jpg" alt="Weather Icon" width="35%" style="border-radius: 5%;" height="auto">
+                                    <img id="weatherIcon"
+                                        src="https://icon-library.com/images/thunderstorm-icon/thunderstorm-icon-19.jpg"
+                                        alt="Weather Icon" width="35%" style="border-radius: 5%;" height="auto">
                                 </div>
-                                <h4 class="text-center" style="font-size: 1rem; font-weight: 500; color: #faf4f4;">Feels like <span id="feelsLike">000.0</span></h4>
-                                
+                                <h4 class="text-center" style="font-size: 1rem; font-weight: 500; color: #faf4f4;">Feels
+                                    like <span id="feelsLike">000.0</span></h4>
+
                                 <div id="weatherAlert" class="alert alert-warning mt-4" style="display: none;"></div>
                             </div>
                         </div>
@@ -70,7 +83,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
         <script>
@@ -156,6 +169,11 @@
                     case 'Clouds':
                         weatherIconUrl = "https://cdn1.iconfinder.com/data/icons/hawcons/32/700118-icon-20-clouds-1024.png";
                         break;
+
+                        case 'haze':
+                        weatherIconUrl = "https://cdn-icons-png.flaticon.com/512/1779/1779862.png";
+                        break;
+                        
                     default:
                         weatherIconUrl = "https://cdn2.iconfinder.com/data/icons/weather-133/24/Cloud_Sun-1024.png";
                 }
@@ -188,6 +206,10 @@
                     case 'Clouds':
                         backgroundImageUrl = "url(./images/overcastclouds.gif)";
                         break;
+                        case 'Haze':
+                        backgroundImageUrl = "url(./images/haze.gif)";
+                        break;
+
                     default:
                         backgroundImageUrl = "url(./images/thunder.gif)";
                 }
@@ -226,9 +248,10 @@
 
                 const alertDiv = document.getElementById('weatherAlert');
                 alertDiv.textContent = alertMessage;
-                alertDiv.style.display = 'block'; // Show the alert div
+                alertDiv.style.display = 'block';
             }
         </script>
     </div>
 </body>
+
 </html>
